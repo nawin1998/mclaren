@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Chakra Petch', sans-serif;
+}
+:root{
+    --h1-font:55px;
+    --h2-font:45px;
+    --h3-font:35px;
+    --h4-font:30px;
+    --h5-font:25px;
+    --main-color: rgb(155,176,202);
+    --font-color:rgb(255, 255, 255);
+}
+html{
+    scroll-padding-top: 0;
+    overflow-x: hidden;
+}
+.logo{
+    position: relative;
+    width: 150px;
+    left: 30px;
+}
+.navs{
+    position: absolute;
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+}
+.navbar-nav{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--font-color);
+}
+.nav-item{
+    margin-left: 10px;
+}
+.nav-link{
+    color: var(--font-color);
+    
+}
+.nav-item:hover{
+    border-top: 5px solid rgb(250, 247, 247);
+    border-radius: 10px;
+}
+button{
+    position: relative;
+    right: 2px;
+    padding: 10px 10px;
+}
+.icon{
+    display: none;
+}
+#Home{
+    background-image: url(images/Home--bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 47.6rem;
+    width: 100%;
+
+}
+.tilt{
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    top: 6rem;
+    color: white;
+}
+.tilt h3{
+    font-size: var(--h3-font);
+}
+.tilt h1{
+    font-size: var(--h1-font);
+}
+.click{
+    position: relative;
+    top: 8px;
+}
+/* about */
+.title2{
+    background-color: var(--main-color);
+}
+.pics:hover{
+    transform: scale(1.1);
+}
+.title2 h2{
+    font-size: var(--h1-font);
+}
+.title2 h4{
+    font-size: var(--h4-font);
+}
+.title3{
+    background-color: var(--main-color);
+}
+.title3 h3{
+    font-size: var(--h5-font);
+}
+.title3 h4{
+    font-size: var(--h5-font);
+}
+/* product */
+.tactics{
+    background-color: var(--main-color);
+}
+.tactics h1{
+    color: var(--font-color);
+}
+.varie img{
+    position: relative;
+    width: 47rem;
+}
+.varie{
+    background-image: url(images/gt.jpg);
+    min-height: 35rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.varie h1{
+    color: var(--font-color);
+    font-weight: bold;
+}
+.tough{
+    background-image: url(images/artura.jpg);
+    min-height: 35rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tough h1{
+    color: var(--font-color);
+    font-weight: bold;
+}
+.reld{
+    background-image: url(images/senna.jpg);
+    min-height: 35rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reld h1{
+    color: var(--font-color);
+    font-weight: bold;
+}
+.eard{
+    background-image: url(images/720s\ coupes.jpg);
+    min-height: 35rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.eard h1{
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+/* service */
+.beat{
+    background-color: var(--main-color);
+}
+.rou{
+    background-color: var(--main-color);
+}
+.rou h1{
+    color: var(--font-color);
+    font-weight: bold;
+}
+.rou h4{
+    color: var(--font-color);
+    font-weight: bold;
+}
+.rud i{
+    font-size: 70px;
+}
+.rad i{
+    font-size: 70px;
+}
+.rid i{
+    font-size: 70px;
+}
+.rod i{
+    font-size: 70px;
+}
+.ryd i{
+    font-size: 70px;
+}
+.rit i{
+    font-size: 70px;
+}
+/* CONTACT */
+.hir{
+    background-color: var(--main-color);
+}
+.ver{
+    background-color: var(--main-color);
+}
+.ver h1{
+    font-size: 100px;
+    animation: tac 1s linear infinite;
+}
+@keyframes tac{
+    50%{
+        opacity: -1;
+    }
+}
+.ter{
+    background-color: var(--main-color);
+}
+/* footer */
+.yed{
+    background-color: var(--main-color);
+}
+
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 991px){
+    header{
+        position: sticky;
+        top: 0;
+        height: 100px;
+        width: 100%;
+        background-color: grey;
+        
+        
+    }
+    .logo img{
+        position: relative;
+        bottom: 18px;
+    }
+     .navbar-nav { 
+        position: fixed;
+        display: block;
+        height: 15rem;
+        width: 100%;
+        right: -100%;
+        background-color: #808080;
+    }
+    .navbar-nav .nav-link{
+        text-align: center;
+    }
+    .navbar-nav .nav-item{
+        position: relative;
+        display: block;
+        left: 10px;
+    }
+    .showmenu{
+        display: block;
+        right: 0;
+        transition: 2s;
+    }
+    .icon{
+        position: relative;
+        display: block;
+        font-size: 30px;
+        left: 75%;
+        top: 15px;
+        
+    }
+    #Home{
+        position: relative;
+        top: 0;
+        background-size: contain;
+        background-attachment: scroll;
+    }
+    .tilt{
+        position: relative;
+        top: 300px;
+        padding: 0 1rem;
+    }
+    .tilt h3{
+        text-align: center;
+        color: #000000;
+    }
+    .tilt h1{
+        position: relative;
+        top: 30px;
+        text-align: center;
+        color: #000000;
+    }
+    .hod{
+        position: relative;
+        left: 19%;
+        top: 70px;
+    }
+    .title2 h2{
+        font-size: 40px;
+    }
+    .title3 h1{
+        text-align: center;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
